@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>算法学习平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="bak.css">
+</head>
+
+<body>
+
+<header>
+    <h1>欢迎来到算法学习平台</h1>
+</header>
+
+<div class="nav-links">
+    <a href="javascript:void(0)" onclick="document.getElementById('loginModal').style.display='block'">登录</a>
+    <a href="javascript:void(0)" onclick="document.getElementById('registerModal').style.display='block'">注册</a>
+    <a href="lesson.html">访问算法课程</a>
+</div>
+
+<footer>
+    版权所有 &copy; 286d
+</footer>
+
+    
+<!-- 登录模态框 -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('loginModal').style.display='none'" class="close">&times;</span>
+        <h2>登录</h2>
+        <form action="/login.html" method="post">
+            <label for="login">登录:</label><br>
+            <input type="text" id="login" name="login" placeholder="邮箱/用户名/手机号码" required><br>
+            <label for="password">密码:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="登录">
+        </form>
+    </div>
+</div>
+
+
+<!-- 注册模态框 -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="document.getElementById('registerModal').style.display='none'" class="close">&times;</span>
+        <h2>注册</h2>
+        <form action="/register.html" method="post">
+            <label for="new_username">用户名:</label><br>
+            <input type="text" id="new_username" name="username" required><br>
+            <label for="phone_number">手机号码:</label><br>
+            <input type="text" id="phone_number" name="phone_number" required><br>
+            <label for="mail_number">电子邮箱:</label><br>
+            <input type="text" id="mail_number" name="mail_number" required><br>
+            <label for="new_password">密码:</label><br>
+            <input type="password" id="new_password" name="password" required><br>
+            <label for="confirm_password">确认密码:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+</div>
+</body>
+</html>
